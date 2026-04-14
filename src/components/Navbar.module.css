@@ -139,9 +139,17 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 1rem 0;
+  }
+
   .logo img {
-    height: 80px;
-    max-width: 180px;
+    height: 60px;
+    max-width: 150px;
+  }
+
+  .mobileOverlay {
+    top: 93px; /* Precise offset for mobile header: logo(60) + padding(1rem*2) + border(1) */
   }
 
   .links {
@@ -152,5 +160,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .icons {
+    gap: 0.5rem;
   }
 }

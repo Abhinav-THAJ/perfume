@@ -6,7 +6,13 @@
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  padding-top: 160px; /* Account for navbar + large logo height */
+  padding-top: 110px; /* Base for mobile */
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 160px; /* Correct offset for desktop */
+  }
 }
 
 .heroBg {
