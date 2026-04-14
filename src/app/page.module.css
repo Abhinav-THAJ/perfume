@@ -1,12 +1,12 @@
 .hero {
   position: relative;
-  height: 90vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  margin-top: -100px; /* pull up under transparent nav */
+  padding-top: 160px; /* Account for navbar + large logo height */
 }
 
 .heroBg {

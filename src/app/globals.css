@@ -50,7 +50,7 @@ img {
 }
 
 .page {
-  padding-top: 100px; /* offset for sticky nav */
+  padding-top: 160px; /* offset for fixed nav (~150px) */
   min-height: 100vh;
 }
 
