@@ -139,6 +139,28 @@
   transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+  .productDetails {
+    padding: 1rem 0.5rem;
+  }
+  
+  .productName {
+    font-size: 0.8rem;
+  }
+
+  .productPrice {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .cartBtn {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 0.6rem;
+    font-size: 0.7rem;
+  }
+}
+
 .centerBtn {
   text-align: center;
   margin-top: 4rem;

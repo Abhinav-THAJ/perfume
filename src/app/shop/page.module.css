@@ -113,3 +113,28 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+  .productDetails {
+    padding: 1rem 0.5rem;
+  }
+  
+  .productName {
+    font-size: 0.85rem;
+  }
+
+  .prices {
+    font-size: 1rem;
+  }
+
+  .cartBtn {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .shortDesc {
+    display: none; /* Hide description on mobile grid to save space */
+  }
+}

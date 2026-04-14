@@ -46,7 +46,13 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 .page {
@@ -61,10 +67,14 @@ img {
 /* Grids */
 .grid {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media (min-width: 768px) {
+  .grid {
+    gap: 2rem;
+  }
   .grid-2 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
   .grid-4 { grid-template-columns: repeat(4, 1fr); }
