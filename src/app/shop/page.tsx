@@ -13,7 +13,7 @@ export default function Shop() {
       </div>
 
       <div className="container section">
-        <div className="grid grid-3">
+        <div className="grid grid-3 grid-mobile-2">
           {products.map((product, index) => (
             <div key={`${product.name}-${index}`} className={styles.productCard}>
               <Link href={`/product/${product.originalIndex}`} className={styles.productImage}>

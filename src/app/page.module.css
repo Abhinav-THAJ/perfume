@@ -206,13 +206,6 @@
   object-fit: cover;
 }
 
-@media (max-width: 900px) {
-  .heroTitle { font-size: 2.5rem; }
-  .highlightGrid { grid-template-columns: 1fr; }
-  .highlightImage { min-height: 400px; }
-  .highlightContent { padding: 3rem 2rem; }
-}
-
 /* Philosophy Section */
 .philosophyContainer {
   background-color: var(--color-surface);
@@ -300,12 +293,24 @@
 }
 
 @media (max-width: 900px) {
+  .heroTitle { font-size: 2.5rem; }
+  .highlightGrid { grid-template-columns: 1fr; }
+  .highlightImage { min-height: 400px; }
+  .highlightContent { padding: 3rem 1.5rem; text-align: center; }
+  
   .philosophyGrid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
   .imageCol img {
-    height: 400px;
+    height: 350px;
+  }
+  .textCol {
+    padding: 0;
+    text-align: center;
+  }
+  .textCol h2 {
+    font-size: 2rem;
   }
 }
 
@@ -379,4 +384,3 @@
     padding: 3rem 2rem;
   }
 }
-

@@ -67,7 +67,27 @@
 }
 
 @media (max-width: 768px) {
-  .textBox { padding: 3rem 0 0 0; }
-  .imageBox { min-height: 300px; }
-  .reverseMobile { display: flex; flex-direction: column-reverse; }
+  .contentSection {
+    padding: 4rem 0;
+  }
+  
+  .imageBox {
+    min-height: 350px;
+    margin-bottom: 2rem;
+  }
+
+  .textBox {
+    padding: 0;
+    text-align: center;
+  }
+
+  .textBox h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .reverseMobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

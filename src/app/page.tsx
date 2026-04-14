@@ -46,7 +46,7 @@ export default function Home() {
           <p>Curated selections for the modern connoisseur</p>
         </div>
         
-        <div className="grid grid-4">
+        <div className="grid grid-4 grid-mobile-2">
           {featuredProducts.map((product, index) => (
             <div key={`${product.name}-${index}`} className={styles.productCard}>
               <Link href={`/product/${product.originalIndex}`} className={styles.productImage}>
