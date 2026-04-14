@@ -1,0 +1,73 @@
+.header {
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  color: var(--color-accent);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.contentSection {
+  padding: 8rem 0;
+}
+
+.imageBox {
+  min-height: 500px;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.textBox h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.textBox p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.signature {
+  margin-top: 2rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.5rem;
+}
+
+.bgLight {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .textBox { padding: 3rem 0 0 0; }
+  .imageBox { min-height: 300px; }
+  .reverseMobile { display: flex; flex-direction: column-reverse; }
+}

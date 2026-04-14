@@ -1,0 +1,193 @@
+.pdpContainer {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  color: #666;
+  font-family: var(--font-sans);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: var(--color-accent);
+}
+
+.pdpGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.imageSection {
+  position: sticky;
+  top: 120px;
+}
+
+.mainImage {
+  aspect-ratio: 4/5;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mainImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detailsSection {
+  padding-top: 1rem;
+}
+
+.brandTag {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: var(--font-serif);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.priceRow {
+  margin-bottom: 2rem;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+}
+
+.salePrice {
+  color: #d32f2f;
+  margin-right: 1rem;
+}
+
+.regularPriceStrikethrough {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.regularPrice {
+  color: var(--color-text);
+  font-style: italic;
+}
+
+.description {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.actionsBox {
+  margin-bottom: 3rem;
+}
+
+.quantityWrapper {
+  margin-bottom: 2rem;
+}
+
+.qtyLabel {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.quantitySelector {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  height: 50px;
+}
+
+.quantitySelector button {
+  background: none;
+  border: none;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.quantitySelector button:hover {
+  background: var(--color-surface);
+}
+
+.quantitySelector span {
+  width: 40px;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-weight: 500;
+}
+
+.buttonsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btnCart, .btnBuy {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.btnCart {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btnCart:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.extraInfo {
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  color: #666;
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .pdpGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .imageSection {
+    position: relative;
+    top: 0;
+  }
+  .buttonsWrapper {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
